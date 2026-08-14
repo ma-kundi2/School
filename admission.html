@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form - Modern Academy</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>Modern Academy</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="staff.html">Staff</a></li>
+                <li><a href="admission.html" class="active">Admission</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h2>Student Admission Form</h2>
+            <p>Join Modern Academy and start your educational journey</p>
+        </div>
+    </section>
+
+    <!-- Admission Form Content -->
+    <section class="page-content">
+        <div class="container">
+            <div class="admission-wrapper">
+                <div class="form-info">
+                    <h3>Welcome to Modern Academy</h3>
+                    <p>We're excited to receive your application! Please fill out the form below with accurate information about the student and parent/guardian.</p>
+                    
+                    <div class="info-box">
+                        <h4>📋 Admission Process</h4>
+                        <ol>
+                            <li>Complete the admission form</li>
+                            <li>Submit required documents</li>
+                            <li>Assessment and interview</li>
+                            <li>Decision notification</li>
+                            <li>Enrollment confirmation</li>
+                        </ol>
+                    </div>
+
+                    <div class="info-box">
+                        <h4>📄 Required Documents</h4>
+                        <ul>
+                            <li>Birth certificate copy</li>
+                            <li>Previous academic records</li>
+                            <li>Medical examination report</li>
+                            <li>ID proof of guardian</li>
+                            <li>Passport size photos</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Admission Form -->
+                <div class="admission-form">
+                    <form id="admissionForm">
+                        <!-- Student Information -->
+                        <fieldset>
+                            <legend>Student Information</legend>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="dateOfBirth">Date of Birth *</label>
+                                    <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="gender">Gender *</label>
+                                    <select id="gender" name="gender" required>
+                                        <option value="">Select Gender</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="gradeLevel">Grade/Class Applying For *</label>
+                                <select id="gradeLevel" name="gradeLevel" required>
+                                    <option value="">Select Grade Level</option>
+                                    <option value="grade1">Grade 1</option>
+                                    <option value="grade2">Grade 2</option>
+                                    <option value="grade3">Grade 3</option>
+                                    <option value="grade4">Grade 4</option>
+                                    <option value="grade5">Grade 5</option>
+                                    <option value="grade6">Grade 6</option>
+                                    <option value="grade7">Grade 7</option>
+                                    <option value="grade8">Grade 8</option>
+                                    <option value="grade9">Grade 9</option>
+                                    <option value="grade10">Grade 10</option>
+                                    <option value="grade11">Grade 11</option>
+                                    <option value="grade12">Grade 12</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="currentSchool">Current/Previous School</label>
+                                <input type="text" id="currentSchool" name="currentSchool">
+                            </div>
+                        </fieldset>
+
+                        <!-- Parent/Guardian Information -->
+                        <fieldset>
+                            <legend>Parent/Guardian Information</legend>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="parentName">Guardian Full Name *</label>
+                                    <input type="text" id="parentName" name="parentName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="parentRelation">Relationship to Student *</label>
+                                    <select id="parentRelation" name="parentRelation" required>
+                                        <option value="">Select Relationship</option>
+                                        <option value="father">Father</option>
+                                        <option value="mother">Mother</option>
+                                        <option value="guardian">Guardian</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="parentEmail">Email Address *</label>
+                                    <input type="email" id="parentEmail" name="parentEmail" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="parentPhone">Phone Number *</label>
+                                    <input type="tel" id="parentPhone" name="parentPhone" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="occupation">Occupation</label>
+                                <input type="text" id="occupation" name="occupation">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="address">Residential Address *</label>
+                                <textarea id="address" name="address" rows="3" required></textarea>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="city">City *</label>
+                                    <input type="text" id="city" name="city" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="state">State/Province *</label>
+                                    <input type="text" id="state" name="state" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="zipcode">Postal Code *</label>
+                                    <input type="text" id="zipcode" name="zipcode" required>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <!-- Additional Information -->
+                        <fieldset>
+                            <legend>Additional Information</legend>
+                            
+                            <div class="form-group">
+                                <label for="programs">Program Preference *</label>
+                                <select id="programs" name="programs" required>
+                                    <option value="">Select Program</option>
+                                    <option value="elementary">Elementary Program (Grades 1-5)</option>
+                                    <option value="middle">Middle School Program (Grades 6-8)</option>
+                                    <option value="highschool">High School Program (Grades 9-12)</option>
+                                    <option value="stem">STEM Program</option>
+                                    <option value="arts">Arts Program</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="specialNeeds">Special Needs/Accommodations</label>
+                                <textarea id="specialNeeds" name="specialNeeds" rows="3" placeholder="Please describe any learning needs or accommodations required"></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="previousPerformance">Previous Academic Performance</label>
+                                <select id="previousPerformance" name="previousPerformance">
+                                    <option value="">Select Level</option>
+                                    <option value="excellent">Excellent</option>
+                                    <option value="good">Good</option>
+                                    <option value="average">Average</option>
+                                    <option value="needsImprovement">Needs Improvement</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="extracurricular">Extracurricular Interests</label>
+                                <textarea id="extracurricular" name="extracurricular" rows="3" placeholder="Sports, arts, music, clubs, etc."></textarea>
+                            </div>
+                        </fieldset>
+
+                        <!-- Consent and Declaration -->
+                        <fieldset>
+                            <legend>Consent and Declaration</legend>
+                            
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="consent" name="consent" required>
+                                <label for="consent" class="checkbox-label">
+                                    I declare that the information provided in this form is true and accurate to the best of my knowledge. *
+                                </label>
+                            </div>
+
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="policies" name="policies" required>
+                                <label for="policies" class="checkbox-label">
+                                    I agree to abide by Modern Academy's rules and policies. *
+                                </label>
+                            </div>
+
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <label for="newsletter" class="checkbox-label">
+                                    I would like to receive updates and news from Modern Academy.
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <!-- Buttons -->
+                        <div class="form-buttons">
+                            <button type="submit" class="btn btn-primary">Submit Application</button>
+                            <button type="reset" class="btn btn-secondary">Clear Form</button>
+                        </div>
+
+                        <p class="form-note">* Required fields</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Modern Academy. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
