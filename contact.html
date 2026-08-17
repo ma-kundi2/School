@@ -1,147 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Modern Academy</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Modern Academy — address, phone and message form.">
+  <title>Contact Us - Modern Academy</title>
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand">
-                <h1>Modern Academy</h1>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="programs.html">Programs</a></li>
-                <li><a href="staff.html">Staff</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
-            </ul>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <div class="brand">
+        <a href="index.html" class="logo" aria-label="Modern Academy logo">M</a>
+        <h1>Modern Academy</h1>
+      </div>
+      <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+      <ul id="primary-navigation" class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="staff.html">Staff</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main">
+  <section class="page-header container">
+    <h2>Contact Us</h2>
+    <p>Get in touch with Modern Academy</p>
+  </section>
+
+  <section class="page-content container">
+    <div class="contact-wrapper">
+      <div class="contact-info">
+        <h3>Contact Information</h3>
+        <div class="info-block">
+          <h4>📍 Address</h4>
+          <p>Modern Academy<br>123 Education Boulevard<br>Springfield, ST 12345<br>Country</p>
         </div>
-    </nav>
 
-    <!-- Page Header -->
-    <section class="page-header">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p>Get in touch with Modern Academy</p>
+        <div class="info-block">
+          <h4>📞 Phone</h4>
+          <p>Main: 0746074152</p>
         </div>
-    </section>
 
-    <!-- Contact Content -->
-    <section class="page-content">
-        <div class="container">
-            <div class="contact-wrapper">
-                <!-- Contact Information -->
-                <div class="contact-info">
-                    <h3>Contact Information</h3>
-                    
-                    <div class="info-block">
-                        <h4>📍 Address</h4>
-                        <p>
-                            Modern Academy<br>
-                            123 Education Boulevard<br>
-                            Springfield, ST 12345<br>
-                            Country
-                        </p>
-                    </div>
-
-                    <div class="info-block">
-                        <h4>📞 Phone</h4>
-                        <p>
-                            Main: 0746074152 <br>
-                
-                            
-                        </p>
-                    </div>
-
-                    <div class="info-block">
-                        <h4>📧 Email</h4>
-                        <p>
-                            General Inquiries: info@modernacademy.edu<br>
-                            Admissions: admissions@modernacademy.edu<br>
-                            Support: support@modernacademy.edu
-                        </p>
-                    </div>
-
-                    <div class="info-block">
-                        <h4>🌐 Follow Us</h4>
-                        <div class="social-links">
-                            <a href="#" class="social-link">Facebook</a>
-                            <a href="#" class="social-link">Twitter</a>
-                            <a href="#" class="social-link">Instagram</a>
-                            <a href="#" class="social-link">LinkedIn</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Contact Form -->
-                <div class="contact-form">
-                    <h3>Send us a Message</h3>
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Full Name *</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="email">Email Address *</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="subject">Subject *</label>
-                            <select id="subject" name="subject" required>
-                                <option value="">Select a subject</option>
-                                <option value="admission">Admission Inquiry</option>
-                                <option value="program">Program Information</option>
-                                <option value="facilities">Facilities Tour</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="message">Message *</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                        <p class="form-note">* Required fields</p>
-                    </form>
-                </div>
-            </div>
-
-            <!-- Map Section -->
-            <div class="content-block" style="margin-top: 50px;">
-                <h3>Location</h3>
-                <p>Visit us at our campus in Springfield. We're easily accessible by car and public transportation.</p>
-                <div class="map-placeholder">
-                    <p>📍 Map would be displayed here (integrate Google Maps for live implementation)</p>
-                </div>
-            </div>
+        <div class="info-block">
+          <h4>📧 Email</h4>
+          <p>General: info@modernacademy.edu<br>Admissions: admissions@modernacademy.edu</p>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Modern Academy. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
-                <a href="contact.html">Contact Us</a>
-            </div>
+        <div class="info-block">
+          <h4>🌐 Follow Us</h4>
+          <div class="social-links">
+            <a href="#" class="social-link">Facebook</a>
+            <a href="#" class="social-link">Twitter</a>
+            <a href="#" class="social-link">Instagram</a>
+            <a href="#" class="social-link">LinkedIn</a>
+          </div>
         </div>
-    </footer>
+      </div>
 
-    <script src="js/script.js"></script>
+      <div class="contact-form">
+        <h3>Send us a Message</h3>
+        <form id="contactForm" data-netlify="true">
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject *</label>
+            <select id="subject" name="subject" required>
+              <option value="">Select a subject</option>
+              <option value="admission">Admission Inquiry</option>
+              <option value="program">Program Information</option>
+              <option value="facilities">Facilities Tour</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p class="form-note">* Required fields</p>
+        </form>
+      </div>
+    </div>
+
+    <div class="content-block" style="margin-top: 30px;">
+      <h3>Location</h3>
+      <p>Visit us at our campus in Springfield. We're easily accessible by car and public transportation.</p>
+      <div class="map-placeholder">📍 Map would be displayed here (integrate Google Maps for live implementation)</div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Modern Academy. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </div>
+  </footer>
+  </main>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
